@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect — Indus Creatives</title>
+  <meta name="description" content="Let's create something remarkable together. Send a project brief to Indus Creatives — we reply within two business days." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Indus Creatives — Home">
+        <svg class="brand-mark" viewBox="0 0 64 80" aria-hidden="true" fill="currentColor">
+          <circle cx="32" cy="5" r="2.4"/><rect x="30.6" y="7.4" width="2.8" height="3"/>
+          <path d="M 25 11 L 39 11 L 36.5 15 L 27.5 15 Z"/>
+          <rect x="20" y="16" width="24" height="2.2"/><rect x="18" y="18.5" width="28" height="1.4"/>
+          <rect x="18.5" y="20.8" width="6" height="1.8"/><rect x="39.5" y="20.8" width="6" height="1.8"/>
+          <path d="M 19.5 23 L 19.5 56 L 24.5 56 L 24.5 31 C 27.2 24.8 36.8 24.8 39.5 31 L 39.5 56 L 44.5 56 L 44.5 23 Z"/>
+          <rect x="17.5" y="56" width="9" height="2"/><rect x="37.5" y="56" width="9" height="2"/>
+          <rect x="30.6" y="36" width="2.8" height="17"/><rect x="28" y="34" width="8" height="2.2"/>
+          <rect x="28" y="52.8" width="8" height="2.2"/><rect x="15" y="60" width="34" height="2.6"/>
+          <rect x="11.5" y="63.6" width="41" height="3"/><rect x="8" y="67.6" width="48" height="4"/>
+        </svg>
+        <span class="brand-word">Indus <em>Creatives</em></span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="expertise.html">Expertise</a></li>
+        <li><a href="about.html">Studio</a></li>
+        <li><a href="contact.html" class="nav-cta active">Connect →</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="eyebrow">IC · 05 · Connect</div>
+      <h1>Let&rsquo;s create<br/>something <em>remarkable</em> together.</h1>
+      <p class="lead">Share the shape of the problem — a paragraph is enough. We&rsquo;ll
+        respond within two business days with a first read, a few questions, and a
+        suggested next step.</p>
+    </div>
+  </section>
+
+  <!-- FORM + DETAILS -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form reveal" autocomplete="on">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" required placeholder="Full name" />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Optional" />
+            </div>
+            <div class="field">
+              <label for="project">Project Type</label>
+              <select id="project" name="project">
+                <option value="">Select a focus…</option>
+                <option>Full-Stack Web Development</option>
+                <option>Mobile Application (iOS / Android)</option>
+                <option>AI / ML Implementation</option>
+                <option>Healthcare / Telehealth</option>
+                <option>Business Automation (CRM / ERP)</option>
+                <option>Digital Marketing / SEO</option>
+                <option>Advisory / Consultation</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="budget">Approximate budget range</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range…</option>
+              <option>Under ₹5L</option>
+              <option>₹5L – ₹15L</option>
+              <option>₹15L – ₹50L</option>
+              <option>₹50L+</option>
+              <option>Prefer to discuss</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about the project</label>
+            <textarea id="message" name="message" placeholder="What are you trying to build, fix, or explore? What&rsquo;s the timeline?" required></textarea>
+          </div>
+
+          <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top: 8px;">
+            <button type="submit" class="btn btn-primary">
+              Send Brief <span class="arrow">→</span>
+            </button>
+            <span class="meta" style="color: var(--slate-soft);">We reply within 2 business days</span>
+          </div>
+        </form>
+
+        <aside class="contact-aside reveal">
+          <div class="eyebrow" style="margin-bottom: 32px;">Direct channels</div>
+
+          <div class="detail">
+            <span class="k">Email</span>
+            <a class="v" href="mailto:hello@induscreatives.in">hello@induscreatives.in</a>
+          </div>
+          <div class="detail">
+            <span class="k">Phone · WhatsApp</span>
+            <a class="v" href="tel:+919876543210">+91 · 98 7654 3210</a>
+          </div>
+          <div class="detail">
+            <span class="k">Studio Locations</span>
+            <span class="v">Mumbai &amp; Bengaluru, India</span>
+          </div>
+          <div class="detail">
+            <span class="k">Working Hours</span>
+            <span class="v">Mon – Fri · 09:30 – 19:00 IST</span>
+          </div>
+          <div class="detail">
+            <span class="k">New Work Availability</span>
+            <span class="v">Accepting projects · Q2 2026</span>
+          </div>
+
+          <p class="meta" style="margin-top: 36px; line-height: 1.8;">
+            IC-BRAND-001 · Vol I / 2026<br/>
+            Primary Logo System · Original Identity
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="value">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">FAQ</div>
+        <div>
+          <h2>Before you <em>write in…</em></h2>
+          <p class="kicker">The answers to the four questions we get most often.</p>
+        </div>
+      </div>
+
+      <ul class="pillar-list reveal" style="max-width: 880px;">
+        <li>
+          <span class="num">Q · 01</span>
+          <div>
+            <h4>How quickly can you start?</h4>
+            <p>Most Discover phases kick off within 1–2 weeks of signing. Build phases start
+              the week after Discover closes.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">Q · 02</span>
+          <div>
+            <h4>Do you work with international clients?</h4>
+            <p>Yes. Roughly half of our engagements are outside India. We bill in USD, EUR,
+              or GBP; overlap hours for US Pacific to UK time zones are easy to arrange.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">Q · 03</span>
+          <div>
+            <h4>Who owns the code?</h4>
+            <p>You do — from the first commit. Repos are in your GitHub/GitLab org, not ours.
+              Full IP assignment is standard in our MSA.</p>
+          </div>
+        </li>
+        <li>
+          <span class="num">Q · 04</span>
+          <div>
+            <h4>Will you sign a BAA / NDA?</h4>
+            <p>Absolutely. BAAs for healthcare work, NDAs for anything sensitive — we have
+              standard templates, or we can paper against yours.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg class="brand-mark" viewBox="0 0 64 80" aria-hidden="true" fill="currentColor">
+            <circle cx="32" cy="5" r="2.4"/><rect x="30.6" y="7.4" width="2.8" height="3"/>
+            <path d="M 25 11 L 39 11 L 36.5 15 L 27.5 15 Z"/>
+            <rect x="20" y="16" width="24" height="2.2"/><rect x="18" y="18.5" width="28" height="1.4"/>
+            <rect x="18.5" y="20.8" width="6" height="1.8"/><rect x="39.5" y="20.8" width="6" height="1.8"/>
+            <path d="M 19.5 23 L 19.5 56 L 24.5 56 L 24.5 31 C 27.2 24.8 36.8 24.8 39.5 31 L 39.5 56 L 44.5 56 L 44.5 23 Z"/>
+            <rect x="17.5" y="56" width="9" height="2"/><rect x="37.5" y="56" width="9" height="2"/>
+            <rect x="30.6" y="36" width="2.8" height="17"/><rect x="28" y="34" width="8" height="2.2"/>
+            <rect x="28" y="52.8" width="8" height="2.2"/><rect x="15" y="60" width="34" height="2.6"/>
+            <rect x="11.5" y="63.6" width="41" height="3"/><rect x="8" y="67.6" width="48" height="4"/>
+          </svg>
+          <h4 style="font-family: var(--ff-display); font-size: 22px; margin: 0 0 10px;">Indus <em>Creatives</em></h4>
+          <p>A studio for modern, engineered digital experiences. Web · Mobile · AI/ML ·
+            Automation. Based between Mumbai and Bengaluru.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Studio</h5>
+          <ul>
+            <li><a href="about.html">Our Approach</a></li>
+            <li><a href="expertise.html">Expertise</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Connect</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#web">Web Development</a></li>
+            <li><a href="services.html#mobile">Mobile Solutions</a></li>
+            <li><a href="services.html#ai">AI &amp; ML</a></li>
+            <li><a href="services.html#healthcare">Healthcare</a></li>
+            <li><a href="services.html#automation">Automation</a></li>
+            <li><a href="services.html#growth">Growth &amp; SEO</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="mailto:hello@induscreatives.in">hello@induscreatives.in</a></li>
+            <li><a href="tel:+919876543210">+91 · 98 7654 3210</a></li>
+            <li><a href="#">Mumbai · Bengaluru</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Indus Creatives · All marks reserved</span>
+        <span class="doc-id">IC-BRAND-001 · Vol I / 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
